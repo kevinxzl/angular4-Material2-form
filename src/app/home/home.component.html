@@ -1,0 +1,49 @@
+<form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+  <table class="fullwidth" cellspacing="0">
+    <tr>
+      <td>
+        <mat-input-container class="fullwidth">
+          <input  matInput placeholder="First Name" id="firstname" [(ngModel)]="person.firstname" name="firstname">
+        </mat-input-container>
+      </td>
+      <td>
+        <mat-input-container class="fullwidth">
+          <input matInput placeholder="Last Name" id="lastname" [(ngModel)]="person.lastname" name="lastname">
+        </mat-input-container>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    <mat-input-container class="fullwidth">
+      <textarea matInput placeholder="Address" id="address" [(ngModel)]="person.address" name="address"></textarea>
+    </mat-input-container>
+  </p>
+
+  <table class="fullwidth" cellspacing="0">
+    <tr>
+      <td>
+        <mat-input-container class="fullwidth">
+          <input matInput placeholder="City" id="city" [(ngModel)]="person.city" name="city">
+        </mat-input-container>
+      </td>
+      <td>
+        <mat-input-container class="fullwidth">
+          <input matInput placeholder="State" id="state" [(ngModel)]="person.state" name="state">
+        </mat-input-container>
+      </td>
+      <td>
+        <mat-input-container class="fullwidth">
+          <input matInput maxlength="5" #postalcode placeholder="Zip Code" id="zipcode" [(ngModel)]="person.zipcode" name="zipcode">
+         
+        </mat-input-container>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    <button type="submit" mat-raised-button>Submit</button>
+  </p>
+
+</form>
