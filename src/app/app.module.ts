@@ -9,6 +9,7 @@ import { MatButtonModule, MatInputModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import 'hammerjs';
 import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
 
   ],
   providers: [],
